@@ -155,7 +155,7 @@ logistic_fit =
 logistic_fit %>% broom::tidy() %>%
   mutate(
     term = str_replace(term, "borough", "Borough: "),
-    estimate = exp(estimate) 
+    estimate = exp(estimate)  
   ) %>%
   select(term, OR = estimate, p.value)
 
