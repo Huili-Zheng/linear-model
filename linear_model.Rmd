@@ -161,6 +161,6 @@ logistic_fit %>% broom::tidy() %>%
 
 new_nyc_airbnb %>%
   modelr::add_predictions(logistic_fit) %>%
-  mutate(pred = boot::inv.logit(pred))
-```
+  mutate(pred = boot::inv.logit(pred))   
+```  
 
